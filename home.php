@@ -133,7 +133,7 @@
     function show(index) {
         let contentEle = document.getElementById("content");
         if (index === 0) {
-            contentEle.src = "index.html";
+            contentEle.src = "HomePage.php";
         } else if (index === 1) {
             contentEle.src = "TTNhanVien.php";
         } else if (index === 2) {
