@@ -5,7 +5,7 @@ $db_select = mysqli_select_db($link, 'dulieu');
 $rs = mysqli_query($link, "SELECT * FROM `nhan vien`");
 echo '<table border="1" width="100%">';
 
-echo '<caption style="padding:20px">Du lieu bang Nhan Vien<Caption>';
+echo '<caption style="padding:20px"><h3>Thông tin nhân viên</h3><Caption>';
 
 echo '<TR?><TH>IDNV</TH>
 <TH>Ho ten</TH>
@@ -13,8 +13,8 @@ echo '<TR?><TH>IDNV</TH>
 <TH>Dia chi</TH>
 </TR>';
 while ($row = mysqli_fetch_array($rs)) {
-echo
-'<TR>
+    echo
+        '<TR>
     <TD>' . $row['IDNV'] . '</TD>
     <TD>' . $row['Họ và tên'] . '</TD>
     <TD>' . $row['IDPB'] . '</TD>
@@ -24,4 +24,4 @@ echo
 
 echo '<TABLE>';
 
-    mysqli_close($link);
+mysqli_close($link);

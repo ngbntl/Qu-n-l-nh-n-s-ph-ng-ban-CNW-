@@ -8,7 +8,7 @@ $result = $conn->query($sql);
 
 echo '<table border="1" width="100%">';
 
-echo '<caption style="padding:20px;"> Thông tin phòng ban <Caption>';
+echo '<caption style="padding:20px;"> <h3>Thông tin phòng ban</h3> <Caption>';
 
 echo '<TR?>
 
@@ -25,9 +25,9 @@ echo '<TR?>
 
 while ($row = mysqli_fetch_array($result)) {
 
-echo
+    echo
 
-'<TR>
+        '<TR>
 
     <TD>' . $row['IDPB'] . '</TD>
 
@@ -37,7 +37,7 @@ echo
 
     <TD>
 
-        <a href="TTNhanVienTheoPB.php?id=' .$row['IDPB']. '">Xem chi tiết</a>
+        <a href="TTNhanVienTheoPB.php?id=' . $row['IDPB'] . '">Xem chi tiết</a>
 
     </TD>
 

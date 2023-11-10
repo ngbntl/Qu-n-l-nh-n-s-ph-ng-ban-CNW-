@@ -1,3 +1,7 @@
+<?php
+    session_start();
+  
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -108,10 +112,13 @@
                     <li index="1">TT nhân viên</li>
                     <li index="2">TT phòng ban</li>
                     <li index="3">Tìm kiếm nhân viên</li>
+                    <li index="4">Đăng nhập</li>
+
+
                 </ul>
             </div>
             <div class="middle">
-                <iframe id="content" style="position:absolute; height: 80%; width:80%; left:15%; top:5%;"></iframe>
+                <iframe id="content" style="position:absolute; height: 90%; width:80%; left:15%; top:5%;"></iframe>
             </div>
             <div class="right">
 
@@ -140,6 +147,8 @@
             contentEle.src = "TTPhongBan.php";
         } else if (index === 3) {
             contentEle.src = "timKiem.php";
+        } else if (index == 4) {
+            contentEle.src = "DangNhap.php";
         }
     }
     </script>
